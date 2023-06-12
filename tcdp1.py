@@ -61,7 +61,8 @@ if validate_expression(expression):
     if num_operators == 1:
         moved_expression = move_operator(expression)
         print("Expressão com operador movido uma casa à direita:")
-        print(moved_expression)
+        retirandoEspaços = moved_expression.replace(" ","")
+        print(retirandoEspaços)
     elif num_operators == 2:
         possibilities = generate_possibilities(expression)
         print(" ")
